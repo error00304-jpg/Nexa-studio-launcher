@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "sequence": 1,
+  "issuedAt": "2026-01-01T00:00:00Z",
+  "events": [
+    {
+      "id": "evento-demo",
+      "name": "Evento Demo",
+      "description": "Evento de ejemplo con Forge 1.20.1.",
+      "status": "disponible",
+      "serverAddress": "play.ejemplo.com:25565",
+      "minecraft": "1.20.1",
+      "loader": { "type": "forge", "version": "REEMPLAZAR_VERSION_DE_FORGE" },
+      "modpack": {
+        "id": "demo-forge-1201",
+        "version": "1.0.0",
+        "manifestUrl": "https://TU-SERVIDOR/manifest.json",
+        "manifestSha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "banner": null,
+      "news": [
+        { "id": "n1", "title": "Bienvenidos", "body": "Primer evento de NexaStudios.", "publishedAt": "2026-01-01T00:00:00Z" }
+      ],
+      "publishedAt": "2026-01-01T00:00:00Z",
+      "updatedAt": "2026-01-01T00:00:00Z",
+      "requirements": { "javaMajor": 17, "minRamMb": 4096, "notes": "Se recomienda 6 GB de RAM." },
+      "access": { "opensAt": null, "closesAt": null }
+    }
+  ],
+  "news": [
+    { "id": "g1", "title": "Mantenimiento programado", "body": "Los sábados por la mañana puede haber mantenimiento.", "publishedAt": "2026-01-01T00:00:00Z" }
+  ]
+}

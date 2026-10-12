@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "id": "demo-forge-1201",
+  "name": "Demo Forge 1.20.1",
+  "version": "1.0.0",
+  "minecraft": "1.20.1",
+  "loader": {
+    "type": "forge",
+    "version": "REEMPLAZAR_VERSION_DE_FORGE",
+    "installerSha256": "0000000000000000000000000000000000000000000000000000000000000000"
+  },
+  "files": [
+    {
+      "path": "mods/ejemplo.jar",
+      "url": "https://TU-SERVIDOR/ejemplo.jar",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "size": 1234
+    }
+  ]
+}

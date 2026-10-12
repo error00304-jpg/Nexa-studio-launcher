@@ -1,6 +1,7 @@
 import { app, BrowserWindow, shell } from 'electron';
 import path from 'node:path';
 import { registerIpc } from './ipc';
+import { restoreSession } from './auth/authService';
 
 const DEV_URL = process.env.NEXA_DEV === '1' ? 'http://localhost:5173' : null;
 
@@ -48,7 +49,8 @@ if (!gotLock) {
       win.focus();
     }
   });
-  void app.whenReady().then(() => {
+  void app.whenReady().then(async () => {
+    await restoreSession();
     registerIpc(DEV_URL);
     createWindow();
   });
